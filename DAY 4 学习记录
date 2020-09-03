@@ -1,0 +1,33 @@
+(1)背景图片：background-image:url(xxx); 可以有多个url，放多个图片，先放的在上，后放的在下（而不是先放的被覆盖！）
+
+(2)背景图像的大小：background-size:xxx  其值可以是px单位或em单位的数据，也可以是关键字 cover(尽量铺满盒子) / contain(尽量使图片显示完整)。前者可能会让图片部分超出盒子；后者可能会让图片占不满盒子，但显示完整的图片
+ps：注意，当同时使用background来批量设定属性和使用background-size设定大小的时候，需要让background-size在background后面，否则无效
+
+(3)图像定位：background-position: x y 设定图像在盒子中的位置，左上角为(0,0)。可以填em或px单位的数据，也可以填百分数，还可以填 center right top 等关键字  
+
+    还可以混用上面三种方法。background-position:top 50%   background-position:20px 35% 等
+    还可以通过方位词和数据调整位置。 background-position:top 25px right 30px ===>距离上边框25px，距离右边框30px
+ps: 当使用方位词时就不用考虑x、y的顺序了
+
+(4)边框的圆角：border-radius  可以传两个值，分别为水平半径和垂直半径。也可以只传一个值同时作用在两个半径上。值可以是px或em单位的数据，也可以是百分数。当水平(垂直)半径=宽(高)时，在这个方向上显示为圆形
+  
+  也可以单独设置某个角的弧度：border-top-right:1em;  可以利用这种方式设置出对话气泡的效果
+
+(5)列表的符号样式：list-style
+
+    ul列表每一项前面的 · 可以通过修改成"none"来去除，也可以使用url()添加自己的图片，还有一些其他参数，如square将 · 改成实心小正方形等
+    ol列表每一项前面的数字标号也可以通过 none 值去除，或通过设置list-style-type变成其他样式，如upper-roman将数字标号变成罗马数字
+    
+    list-style-position可以修改标号出现的位置。默认参数为 outside ，标号在内容之外(即换行后与实际内容平齐，标号突出来)；可以设置成 inside，则标号会作为每一行的开头（即自动换行后与标号平齐）
+
+(6)列表计数
+    
+    可以通过在ol上添加start值来让列表从其他数字开始数。<ol start="3">...</ol> 
+    可以通过在ol上添加reversed关键字来让其倒数。<ol reversed>...</ol>
+ps:上面两个可以一起用<ol start="3" reversed>...</ol> 倒数小于1后就是0，-1，-2....  且若你将标号修改成罗马数字等形式，到了0会变回阿拉伯数字
+
+    也可以直接在li上添加value，指定它是哪个标号。 <li value="2"> hello </li> 且若只修改一个，其后面的所有li都会以它为标准接着计数(比如这里的li后一个默认就是3)
+              value的值只能是数字，输入字符不识别。
+
+
+
