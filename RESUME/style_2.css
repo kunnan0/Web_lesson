@@ -1,0 +1,46 @@
+* {
+	color: rgba(0,0,0,.7);
+	font-family: Verdana, Geneva, sans-serif;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.fontSize {
+	font-size: 20px;
+} 
+.fontBold {
+	font-weight: bold;
+}
+
+h1 {
+	display: inline-block;
+	font-size: 3em;
+	float: left;
+	padding-top: 80px;
+	margin: 0,20px;
+	height: 780px;
+	width: 250px;
+	text-align: center;
+	background-color: rgb(101,165,250);
+	color: white;
+}
+.father {
+	padding-left: 280px;
+	line-height: 40px;
+}
+
+ul li {
+	float: left;
+	margin-right: 15px;
+}
+.info,
+.call {
+	height: 40px;
+}
+h2 {
+	/*clear: both;*/
+}
+.skill::before {
+	clear: left;
+	content: "";
+}
