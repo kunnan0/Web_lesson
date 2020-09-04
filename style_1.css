@@ -1,0 +1,44 @@
+* {
+	color: rgba(0,0,0,.7);
+	font-family: Verdana, Geneva, sans-serif;
+
+}
+.fontSize {
+	font-size: 20px;
+} 
+.fontBold {
+	font-weight: bold;
+}
+ul {
+	list-style: none;
+	/*line-height: 20px;*/
+	margin: 0;
+	padding: 0;
+}
+
+.info,
+.call {
+	height: 20px;
+}
+
+li {
+	float: left;
+	margin-right: 25px;
+	/*margin-bottom: 30px;*/
+	height: 20px;
+	line-height: 20px;
+}
+
+h2 {
+	/*clear: both;*/
+}
+
+/*.n1,
+.s1,
+.p1,
+.ph1,
+.m1,
+.web1 {
+	font-weight: bold;
+
+}*/
