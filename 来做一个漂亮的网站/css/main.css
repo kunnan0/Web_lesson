@@ -1,0 +1,576 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.w {
+	width: 1599px;
+	margin: auto;
+
+	/*height: 8000px;*/
+	/*background-color: skyblue;*/
+}
+
+/*头部*/
+.w .header {
+	position: relative;
+	background: url(../image/背景图1_02.png) no-repeat;
+	background-size: contain;
+	height: 990px;
+
+	/*border: 1px black solid;*/
+}
+/*注册框外框*/
+.w .header .signDiv {
+	position: absolute;
+	height: 250px;
+	width: 969px;
+	/*background-color: pink;*/
+	top: 520px;
+	left: 310px;
+	border: 2px rgb(84,80,77) solid;
+}
+/*注册框父亲*/
+.w .header .signDiv .signUp {
+	position: absolute;
+	width: 800px;
+	top: 145px;
+	left: 435px;
+	margin-left: -250px;
+	/*background-color: pink;*/
+}
+/*注册框input*/
+.w .header .signDiv .signUp input {
+	background-color: transparent;
+	width: 250px;
+	height: 40px;
+	border: 2px rgb(89,83,72) solid;
+	margin-left: 20px;
+	color: white;
+	/*font-weight: bold;*/
+	font-size: 14px;
+	padding-left: 15px;
+	line-height: 40px;
+}
+.w .header .signDiv .signUp .upass {
+	color: gray;
+}
+.w .header .signDiv .signUp button {
+	background-color: white;
+	height: 40px;
+	width: 120px;
+	border: 0;
+	vertical-align: top;
+	font-size: 10px;
+	text-align: center;
+	line-height: 40px;
+	margin-left: 20px;
+}
+
+/*展示图1*/
+.w .show1 {
+	position: relative;
+	background: url(../image/images/背景图02_02.png) no-repeat;
+	background-size: contain;
+	width: 100%;
+	height: 710px;
+}
+/*item展示框*/
+.w .show1 .items {
+	position: absolute;
+	top: 320px;
+	left: 800px;
+	margin-left: -500px;
+	width: 1000px;
+	height: 300px;
+
+	/*background-color: pink;*/
+
+}
+.w .show1 .items [class^="item"] {
+	float: left;
+	width: 460px;
+	height: 110px;
+	padding: 20px;
+
+	/*background-color: green;*/
+}
+.w .show1 .items .item1 {
+	background: url(../image/images/ICONS_03.png) no-repeat;
+	background-position: 20px,center;
+}
+.w .show1 .items [class^="item"] .title {
+	margin-left: 70px;
+	margin-top: 30px;
+	font-weight: bold;
+	font-size: 18px;
+}
+.w .show1 .items [class^="item"] .content {
+	margin-left: 70px;
+	margin-top: 5px;
+	color: rgb(131,131,131);
+}
+
+.w .show1 .items .item2 {
+	background: url(../image/images/ICONS_06.png) no-repeat;
+	background-position: 20px,center;
+}
+.w .show1 .items .item3 {
+	background: url(../image/images/ICONS_11.png) no-repeat;
+	background-position: 20px,center;
+}
+.w .show1 .items .item4 {
+	background: url(../image/images/icons_13.png) no-repeat;
+	background-position: 20px,center;
+}
+
+
+/*smart car*/
+.w .car {
+	position: relative;
+	width: 100%;
+	height: 799px;
+	background: url(../image/images/背景图3_03.png) no-repeat;
+	background-size: contain;
+}
+.w .car .check {
+	position: absolute;
+	top: 550px;
+	left: 315px;
+	
+}
+.w .car .check a {
+	display: inline-block;
+	height: 50px;
+	width: 200px;
+	text-align: center;
+	line-height: 50px;
+	color: rgb(84,84,84);
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 14px;
+	background-color: white;
+}
+.w .car .try {
+	position: absolute;
+	top: 550px;
+	left: 540px;
+}
+.w .car .try a {
+	display: inline-block;
+	height: 50px;
+	width: 200px;
+	text-align: center;
+	line-height: 50px;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 14px;
+	background-color: transparent;
+	border: 1px rgb(110,117,111) solid;
+}
+
+/*展示图2*/
+.w .show2 {
+	width: 100%;
+	height: 581px;
+	background-color: white;
+	position: relative;
+}
+.w .show2 .title {
+	position: relative;
+}
+.w .show2 .title img {
+	position: absolute;
+	top: 100px;
+	width: 550px;
+	left:  50%;
+	margin-left: -255px;
+}
+.w .show2 .content {
+	display: flex;
+	position: absolute;
+	top: 200px;
+	width: 1000px;
+	left: 50%;
+	margin-left: -500px;
+
+	/*background-color: pink;*/
+}
+.w .show2 .content .content1,
+.w .show2 .content .content2,
+.w .show2 .content .content3 {
+	flex: 1 200px;
+	padding-left: 60px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 18px;
+}
+
+/*show3,4*/
+.w .show3 {
+	position: relative;
+	width: 100%;
+	height: 501px;
+	background-color: white;
+
+}
+.w .show3 img {
+	position: absolute;
+	width:520px;
+	top: 120px;
+	left: 300px;
+}
+.w .show3 .content {
+	position: absolute;
+	width: 320px;
+	height: 450px;
+	top: 180px;
+	left: 890px;
+}
+.w .show3 .content .title,
+.w .show4 .content .title {
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+.w .show3 .content p,
+.w .show4 .content p {
+	text-align: left;
+	line-height: 25px;
+	font-size: 18px;
+}
+.w .show4 {
+	position: relative;
+	width: 100%;
+	height: 500px;
+	background-color: white;
+}
+.w .show4 img {
+	position: absolute;
+	right: 350px;
+	top: 120px;
+	width: 500px;
+}
+.w .show4 .content {
+	position: absolute;
+	width: 320px;
+	height: 450px;
+	top: 160px;
+	right: 950px;
+}
+
+/*导师*/
+.w .master {
+	position: relative;
+	width: 100%;
+	height: 1085px;
+	overflow: hidden;
+	background-color: white;
+}
+.w .master .title {
+	position: absolute;
+	left: 50%;
+	top: 120px;
+	margin-left: -197px;
+}
+.w .master .title .title2 {
+	position: absolute;
+	left: 50%;
+	width: 695px;
+	margin-left: -339px;
+	margin-top: 20px;
+}
+.w .pic {
+	position: absolute;
+
+	top: 250px;
+	left: 50%;
+	margin-left: -490px;
+	width: 980px;
+	height: 720px;
+
+	/*background-color: gray;*/
+}
+.w .pic a {
+	display: block;
+	float: left;
+}
+
+.w .pic .photo1 {
+	margin-right: 40px;
+	margin-bottom: 35px;
+}
+.w .pic .photo2 {
+	margin-bottom: 35px;
+}
+.w .pic .photo3 {
+	margin-right: 40px;
+}
+.mask1 {
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 470px;
+	height: 340px;
+	z-index: 100;
+	background: rgba(0,0,0,.3) url(../image/Facebook.png) center center no-repeat;
+}
+.mask2 {
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 510px;
+	width: 470px;
+	height: 340px;
+	z-index: 100;
+	background: rgba(0,0,0,.3) url(../image/Facebook.png) center center no-repeat;
+}
+.mask3 {
+	display: none;
+	position: absolute;
+	top: 378px;
+	left: 0px;
+	width: 470px;
+	height: 340px;
+	z-index: 100;
+	background: rgba(0,0,0,.3) url(../image/Facebook.png) center center no-repeat;
+}
+.mask4 {
+	display: none;
+	position: absolute;
+	top: 378px;
+	left: 510px;
+	width: 470px;
+	height: 340px;
+	z-index: 100;
+	background: rgba(0,0,0,.3) url(../image/Facebook.png) center center no-repeat;
+}
+
+.photo1:hover .mask1,
+.photo2:hover .mask2,
+.photo3:hover .mask3,
+.photo4:hover .mask4{
+	display: block;
+}
+
+/*建议页*/
+.w .write {
+	position: relative;
+	width: 100%;
+	height: 700px;
+
+	background-color: white;
+}
+.w .write .subject {
+	position: absolute;
+	top: 70px;
+	left: 315px;
+	width: 470px;
+	height: 560px;
+	border: 1px rgb(231,231,231) solid;
+
+	/*background-color: gray;*/
+}
+.w .write .contact {
+	position: absolute;
+	top: 170px;
+	left: 900px;
+	width: 370px;
+	height: 380px;
+
+	/*background-color: gray;*/
+}
+.w .write .subject .title {
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	height: 25px;
+	width: 250px;
+	line-height: 25px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: -125px;
+}
+.w .write .subject .email {
+	box-sizing: border-box;
+	position: absolute;
+	top: 110px;
+	left: 50%;
+	width: 370px;
+	height: 50px;
+	margin-left: -185px;
+	padding-left: 20px;
+	font-size: 18px;
+	line-height: 50px;
+	color: rgb(137,137,137);
+	border: 1px rgb(137,137,137) solid;
+}
+.w .write .subject .sub {
+
+	box-sizing: border-box;
+	position: absolute;
+	top: 180px;
+	left: 50%;
+	width: 370px;
+	height: 50px;
+	margin-left: -185px;
+	padding-left: 20px;
+	font-size: 18px;
+	line-height: 50px;
+	color: rgb(137,137,137);
+	border: 1px rgb(137,137,137) solid;
+}
+.w .write .subject .message {
+	box-sizing: border-box;
+	position: absolute;
+	top: 250px;
+	left: 50%;
+	width: 370px;
+	height: 200px;
+	margin-left: -185px;
+	padding: 25px;
+	font-size: 23px;
+	color: rgb(137,137,137);
+	border: 1px rgb(137,137,137) solid;
+}
+.w .write .subject .send {
+	position: absolute;
+	top: 470px;
+	left: 50%;
+	width: 370px;
+	height: 50px;
+	margin-left: -185px;
+	color: white;
+	background-color: black;
+	text-align: center;
+	line-height: 50px;
+	border: 0;
+}
+.w .contact p {
+	margin-top: 20px;
+	color: rgb(111,111,111);
+}
+.w .contact .way {
+	margin-top: 40px;
+}
+.w .contact .way .address {
+	background: url(../image/MapIcon.png) no-repeat;
+	width: 100%;
+	height: 50px;
+	padding:20px 0 0 40px;
+	background-position: 10px center;
+}
+.w .contact .way .telphone {
+	background: url(../image/PhoneIcon.png) 10px center no-repeat;
+	padding-left: 40px;
+	margin-top: 20px;
+}
+.w .contact .way .mail {
+	background: url(../image/MailIcon.png) 10px center no-repeat;
+	padding-left: 40px;
+	margin-top: 30px;
+}
+
+/*footer*/
+.w .footer {
+	position: relative;
+	width: 100%;
+	height: 410px;
+
+	background-color: black;
+	color: white;
+}
+/*about us 部分*/
+.w .footer .list {
+	position: absolute;
+	top: 85px;
+	left: 215px;
+	width: 720px;
+	height: 230px;
+
+	/*background-color: rgb(112,130,97);*/
+}
+.w .footer .list ul {
+	list-style: none;
+}
+
+.w .footer .list .learnMore {
+	width: 130px;
+	height: 215px;
+
+}
+
+.w .footer .list .aboutUs {
+	position: absolute;
+	width: 150px;
+	height: 215px;
+	top: 0;
+	left: 305px;
+}
+.w .footer .list .support {
+	position: absolute;
+	width: 150px;
+	height: 215px;
+	top: 0;
+	left: 600px;
+}
+
+.list li {
+	margin-bottom: 30px;
+	color: rgb(147,147,147);
+	font-size: 14px;
+	font-weight: 700;
+}
+.w .footer .list .Ftitle {
+	font-size: 18px;
+	font-weight: bolder;
+	color: white;
+}
+/*结束语部分*/
+.w .footer .enjoy {
+	position: absolute;
+	width: 270px;
+	height: 160px;
+	top: 85px;
+	right: 225px;
+}
+.w .footer .enjoy h4 {
+	margin-top: 20px;
+	color: rgb(91,91,91);
+}
+.w .footer .enjoy ul {
+	list-style: none;
+	width: 240px;
+	height: 30px;
+	margin-top: 30px;
+
+	/*background-color: pink;*/
+}
+.w .footer .enjoy [class^="item"] {
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-right: 10px;
+}
+.w .footer .enjoy .item1 {
+	background: url(../image/footer/FacebookIcon.png) no-repeat center center;
+}
+.w .footer .enjoy .item2 {
+	background: url(../image/footer/TwitterIcon.png) no-repeat center center;
+}
+.w .footer .enjoy .item3 {
+	background: url(../image/footer/GoogleIcon.png) no-repeat center center;
+}
+.w .footer .enjoy .item4 {
+	background: url(../image/footer/LinkedInIcon.png) no-repeat center center;
+}
+.w .footer .enjoy .item5 {
+	background: url(../image/footer/PinterestIcon.png) no-repeat center center;
+}
+.w .footer .enjoy .item6 {
+	background: url(../image/footer/TumblerIcon.png) no-repeat center center;
+}
+
