@@ -1,0 +1,359 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+ul li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+/*版心*/
+.w {
+	position: relative;
+	width: 100%;
+	margin: auto;
+	height: 100%;
+	min-height: 3000px;
+	background-color: skyblue;
+}
+
+/*最左侧导航栏*/
+.w .l-nav {
+	position: absolute;
+	width: 100px;
+	left: 0;
+	top: 0;
+	height: 100%;
+	background-color: rgb(29,37,49);
+}
+.w .l-nav ul {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	width: 100px;
+	height: 400px;
+}
+.w .l-nav ul li {
+	flex: 1 100px;
+	width: 100px;
+	height: 100px;
+	/*border-radius: 50px;*/
+
+	/*background-color: red;*/
+}
+.w .l-nav ul .item1 {
+	background: url(../image/Item1.png) center center no-repeat;
+}
+.w .l-nav ul .item2 {
+	background: url(../image/Item2.png) center center no-repeat;
+}
+.w .l-nav ul .item3 {
+	background: url(../image/Item3.png) center center no-repeat;
+}
+.w .l-nav ul .item4 {
+	background: url(../image/Item4.png) center center no-repeat;
+}
+.w .l-nav .items li a {
+	display: block;
+	width: 65px;
+	height: 65px;
+	margin: 20px auto 0 auto; 
+	border: 0;
+	border-radius: 65px;
+}
+.w .l-nav .set {
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	bottom: 0;
+	left: 0;
+	width: 50px;
+	height: 25px;
+	margin-left: 25px;
+
+	/*background-color: pink;*/
+}
+.w .l-nav .set li {
+	flex: 1 16px;
+	height: 16px;
+}
+.w .l-nav .set li a {
+	display: inline-block;
+	text-align: center;
+	width: 16px;
+	height: 16px;
+	
+}
+.w .l-nav .set li .set1 {
+	background: url(../image/Grid.png) center center no-repeat;
+}
+.w .l-nav .set li .set2 {
+	background: url(../image/Settings.png) center center no-repeat;
+}
+
+/*左侧菜单栏*/
+.w .menuNav {
+	position: absolute;
+	box-sizing: border-box;
+	width: 250px;
+	height: 100%;
+	left: 100px;
+
+	background-color: rgb(34,44,60);
+}
+.w .menuNav .line {
+	margin: 0 30px;
+	width: 190px;
+
+	border: 1px rgb(42,53,71) solid; 
+}
+
+.w .menuNav .menu,
+.w .menuNav .products,
+.w .menuNav .dashboard {
+	margin: 30px;
+
+	/*background-color: pink;*/
+}
+.w .menuNav li {
+	margin-top: 20px;
+	
+}
+.w .menuNav li a {
+	color: rgb(183,192,205);
+	font-weight: 800;
+	font-size: 14px;
+}
+
+.w .menuNav .products li a{
+	padding-left: 25px;
+}
+.w .menuNav .products .pro1 {
+	background: url(../image/BookofWisdom.png) left center no-repeat;
+}
+.w .menuNav .products .pro2 {
+	background: url(../image/VideoCamera.png) left center no-repeat;
+}
+.w .menuNav .products .pro3 {
+	background: url(../image/Painting.png) left center no-repeat;
+}
+.w .menuNav .products .pro4 {
+	background: url(../image/Chart.png) left center no-repeat;
+}
+.w .menuNav .title {
+	color: rgb(91,103,121);
+	font-size: 14px;
+	font-weight: 800;
+}
+/*monthGoals*/
+.w .menuNav .monthGoals {
+	position: fixed;
+	bottom: 5px;
+	margin: 0 30px;	
+	color: white;
+}
+.w .menuNav li.yes a {
+	color: white ;
+}
+.w .menuNav a.settings1 {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+}
+.w .menuNav a.settings2 {
+	position: absolute;
+	top: 298px;
+	right: 30px;
+}
+.w .menuNav a.settings3 {
+	position: absolute;
+	top: 528px;
+	right: 30px;
+}
+.w .menuNav .alert1 {
+	position: absolute;
+	right: 30px;
+	top: 558px;
+	width: 35px;
+	height: 25px;
+	border-radius: 17px;
+	text-align: center;
+	line-height: 25px;
+	font-weight: 600;
+	font-size: 14px;
+	color: white;
+	background-color: rgb(36,153,241); 
+}
+/*右侧顶端条*/
+.w .messageBox {
+	position: absolute;
+	left: 350px;
+	max-width: 1550px;
+	width: 100%;
+	height: 100%;
+
+	background-color: pink;
+}
+.w .messageBox .topBar {
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	height: 80px;
+	overflow: hidden;
+
+	background-color: white;
+}
+.w .messageBox .topBar .logo {
+	margin-left: 30px;
+	margin-top: 30px;
+	font-size: 24px;
+	font-weight: bold;
+}
+.w .messageBox .topBar .user {
+	position: fixed;
+	right: 20px;
+	top: 10px;
+	width: 200px;
+	height: 50px;
+
+	/*background-color: green;*/
+}
+.w .messageBox .topBar .user .photo,
+.w .messageBox .topBar .user .name,
+.w .messageBox .topBar .user .arrow {
+	float: left;
+	display: inline-block;
+	
+}
+.w .messageBox .topBar .user .name,
+.w .messageBox .topBar .user .arrow {
+	line-height: 50px;
+	text-align: center;
+}
+.w .messageBox .topBar .user .name .uname {
+	height: 15px;
+	color: skyblue;
+	font-weight: 900;
+	
+}
+.w .messageBox .topBar .user .name .level {
+	height: 15px;
+	color: gray;
+	font-size: 14px;
+	font-weight: bolder;
+}
+.w .messageBox .topBar .user .arrow {
+	margin-left: 20px;
+}
+/*预览盒子*/
+.w .messageBox .preview {
+	box-sizing: border-box;
+	width: 400px;
+	height: 100%;
+	border: 1px solid rgb(230,233,236);
+	background-color: white;
+	margin-top: 80px;
+
+}
+.w .messageBox .preview .serach {
+	box-sizing: border-box;
+	border-bottom: 1px solid rgb(230,233,236);
+	height: 75px;
+	width: 100%
+}
+.w .messageBox .preview .serach input {
+	box-sizing: border-box;
+	width: 340px;
+	height: 35px;
+	margin: 20px 30px;
+	padding-left: 20px;
+	line-height: 35px;
+	border: 1px solid rgb(230,233,236);
+	color: rgb(178,186,200);
+	background: url(../image/Searchicon.png) 310px center no-repeat;
+}
+.w .messageBox .preview .preBox li {
+	box-sizing: border-box;
+	width: 100%;
+	height: 130px;
+	border-bottom: 1px solid rgb(230,233,236);
+
+	background-color: green;
+}
+/*右边消息盒子*/
+.w .messageBox .all {
+	position: absolute;
+	right: 0;
+	top: 80px;
+	margin-left: 340px;
+	max-width: 1150px;
+	width: 100%;
+	height: 100%;
+	background-color: skyblue;
+}
+/*上边条*/
+.w .messageBox .all .setBar {
+	box-sizing: border-box;
+	width: 100%;
+	height: 75px;
+	border-top: 1px solid rgb(230,233,236);
+	border-bottom: 1px solid rgb(230,233,236);
+	background-color: white;
+}
+.w .messageBox .all .setBar .name {
+	float: left;
+	text-align: center;
+	height: 100%;
+	line-height: 73px;
+	margin-left: 20px;
+	padding-right: 20px;
+	font-size: 18px;
+	font-weight: bold;
+	color: rgb(88,93,104);
+	background: url(../image/Status.png) right center no-repeat;
+}
+/*具体消息盒子*/
+.w .messageBox .all .showMessage {
+	width: 100%;
+	height: 1000px;
+	color: rgb(88,93,104);
+	font-size: 14px;
+	background-color: pink;
+}
+.w .messageBox .all .showMessage .mes1 {
+	display: flex;
+	flex-direction: column;
+	max-width: 1150px;
+	width: 100%;
+	border-bottom: 1px solid rgb(230,233,236);
+	/*height: 500px;*/
+
+
+	background-color: white;
+}
+.w .messageBox .all .showMessage .mes1 .req,
+.w .messageBox .all .showMessage .mes1 .res {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 1150px;
+	padding: 30px 20px;
+
+
+	/*background-color: rgb(0,100,150);*/
+}
+.w .messageBox .all .showMessage .mes1 .req .image,
+.w .messageBox .all .showMessage .mes1 .res .image {
+	float: left;
+	margin: 0 20px;
+}
+.w .messageBox .all .showMessage .mes1 .info {
+	font-weight: bold;
+	font-size: 18px;
+	color: rgb(177,179,185);
+}
+.w .messageBox .all .showMessage .mes1 p,
+.w .messageBox .all .showMessage .mes1 .photoShow {
+	margin-left: 100px;
+}
